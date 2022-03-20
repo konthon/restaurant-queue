@@ -37,7 +37,7 @@ const AdminRestaurants: React.FC = () => {
           <thead>
             <tr>
               <th>No</th>
-              <th>Edit</th>
+              <th>Actions</th>
               <th>Name</th>
               <th>Description</th>
               <th>Queue Index</th>

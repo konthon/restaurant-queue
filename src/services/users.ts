@@ -8,6 +8,6 @@ export const getUserByUsername = (username: string) =>
   axios.get<IUser[]>(USERS, { params: { username } })
 
 export const createUser = (data: IUser) => axios.post<IUser>(USERS, data)
-
 export const updateUser = (id: string, data: Partial<IUser>) =>
   axios.patch(`${USERS}/${id}`, data)
+export const deleteUser = (id: string) => axios.delete(`${USERS}/${id}`)
