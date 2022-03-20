@@ -10,7 +10,6 @@ interface IProps {
 
 const HeaderWrapper = styled.div`
   img.cover {
-    width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
     background-color: var(--bs-light);
@@ -60,7 +59,7 @@ const HeaderRestaurant: React.FC<IProps> = (props) => {
       </Ratio>
       <section className='content'>
         <h2>{restaurant?.data.name}</h2>
-        <p>{restaurant?.data.description}</p>
+        <p className='text-break'>{restaurant?.data.description}</p>
         <div className='d-flex flex-wrap gap-3'>
           {restaurant?.data.photos.map((photo) => (
             <PhotoItem key={photo.alt}>
