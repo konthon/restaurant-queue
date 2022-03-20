@@ -37,7 +37,7 @@ const SignUp: React.FC<IProps> = (props) => {
   return (
     <div>
       <Form className='d-flex flex-column gap-3' onSubmit={onSignUp}>
-        <Form.Group controlId='username'>
+        <Form.Group controlId='new-username'>
           <Form.Label>Username</Form.Label>
           <Form.Control
             type='text'
@@ -47,7 +47,7 @@ const SignUp: React.FC<IProps> = (props) => {
             isInvalid={isInvalid}
           />
         </Form.Group>
-        <Form.Group controlId='password'>
+        <Form.Group controlId='new-password'>
           <Form.Label>Password</Form.Label>
           <Form.Control
             type='password'
