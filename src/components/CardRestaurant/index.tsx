@@ -3,6 +3,7 @@ import { Card, Ratio } from 'react-bootstrap'
 import styled from 'styled-components'
 
 import type { MouseEventHandler } from 'react'
+import type { IPhoto } from 'interfaces/restaurant'
 
 const CardWrapper = styled(Card)`
   cursor: pointer;
@@ -19,28 +20,39 @@ const CardWrapper = styled(Card)`
     .title {
       font-size: 1.25rem;
       font-weight: 700;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .description {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 `
 
-// TODO: placeholder
-const cover =
-  'https://www.infoquest.co.th/wp-content/uploads/2020/12/20201228_Canva_Fasfood-1024x576.png'
-
 interface IProps {
   onClick?: MouseEventHandler<HTMLDivElement>
+  name: string
+  description?: string
+  cover: IPhoto
 }
 
 const CardRestaurant: React.FC<IProps> = (props) => {
-  const { onClick } = props
+  const { onClick, name, description, cover } = props
   return (
     <CardWrapper onClick={onClick}>
       <Ratio aspectRatio='16x9'>
-        <img className='cover' src={cover} alt='cover' />
+        <img className='cover' src={cover.src} alt={cover.alt} />
       </Ratio>
       <div className='content'>
-        <div className='title'>Title</div>
-        <div className='description'>short description</div>
+        <div className='title'>{name}</div>
+        <div className='description'>{description}</div>
       </div>
     </CardWrapper>
   )

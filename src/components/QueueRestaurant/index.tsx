@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
 
-const QueueRestaurant: React.FC = () => {
+interface IProps {
+  selectedID: string | null
+}
+
+const QueueRestaurant: React.FC<IProps> = (props) => {
+  const { selectedID } = props
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   const onCancel = () => setIsOpen(false)

@@ -1,5 +1,21 @@
 {
   "restaurants": [],
-  "queues": [],
-  "users": []
+  "queues": [
+    {
+      "id": "random",
+      "user": "userId",
+      "restaurant": "restaurantId",
+      "createAt": "date",
+      "updateAt": "date",
+      "status": "'in-queue' | 'done' | 'skip'"
+    }
+  ],
+  "users": [
+    {
+      "id": "random",
+      "username": "random",
+      "password": "encrypted",
+      "queues": ["queueId1", "queueId2"]
+    }
+  ]
 }

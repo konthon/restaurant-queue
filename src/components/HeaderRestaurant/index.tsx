@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Ratio } from 'react-bootstrap'
+import { useQuery } from 'react-query'
+import { getRestaurantByID } from 'services/restaurants'
 import styled from 'styled-components'
+
+interface IProps {
+  selectedID: string | null
+}
 
 const HeaderWrapper = styled.div`
   img.cover {
@@ -26,37 +32,35 @@ const PhotoItem = styled.div`
   }
 `
 
-// TODO: replace with real
-const cover = {
-  src: 'https://www.infoquest.co.th/wp-content/uploads/2020/12/20201228_Canva_Fasfood-1024x576.png',
-  alt: 'cover',
-}
-const photos = [
-  {
-    src: 'https://www.infoquest.co.th/wp-content/uploads/2020/12/20201228_Canva_Fasfood-1024x576.png',
-    alt: 'image-1',
-  },
-  {
-    src: 'https://www.infoquest.co.th/wp-content/uploads/2020/12/20201228_Canva_Fasfood-1024x576.png',
-    alt: 'image-2',
-  },
-  {
-    src: 'https://www.infoquest.co.th/wp-content/uploads/2020/12/20201228_Canva_Fasfood-1024x576.png',
-    alt: 'image-3',
-  },
-]
+const HeaderRestaurant: React.FC<IProps> = (props) => {
+  const { selectedID } = props
+  const { data: restaurant } = useQuery(
+    ['restaurant', selectedID],
+    () => getRestaurantByID(selectedID || ''),
+    { enabled: selectedID !== null }
+  )
 
-const HeaderRestaurant: React.FC = () => {
+  if (!selectedID) {
+    return (
+      <div className='w-100 d-flex align-items-center justify-content-center text-center'>
+        Please select a restaurant on the left-side to continue
+      </div>
+    )
+  }
   return (
     <HeaderWrapper>
       <Ratio aspectRatio='21x9'>
-        <img src={cover.src} className='cover' alt={cover.alt} />
+        <img
+          src={restaurant?.data.cover.src}
+          className='cover'
+          alt={restaurant?.data.cover.alt}
+        />
       </Ratio>
       <section className='content'>
-        <h2>Title</h2>
-        <p>desc</p>
+        <h2>{restaurant?.data.name}</h2>
+        <p>{restaurant?.data.description}</p>
         <div className='d-flex flex-wrap gap-3'>
-          {photos.map((photo) => (
+          {restaurant?.data.photos.map((photo) => (
             <PhotoItem key={photo.alt}>
               <Ratio aspectRatio='1x1'>
                 <img src={photo.src} alt={photo.alt} />
