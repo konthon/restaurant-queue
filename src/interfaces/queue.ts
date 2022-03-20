@@ -1,9 +1,4 @@
-export enum StatusType {
-  IN_QUEUE = 'in-queue',
-  DONE = 'done',
-  SKIP = 'skip',
-  CANCELED = 'canceled',
-}
+export type StatusType = 'in-queue' | 'done' | 'skip' | 'canceled'
 
 export interface IQueue {
   id: string

@@ -14,6 +14,7 @@ import { UserContext, useUserReducer } from 'contexts/userContext'
 import { LS_USER } from 'config/constants'
 import { getUserByID } from 'services/users'
 import { IUserDispatch } from 'contexts/userContext/type'
+import Queues from 'pages/queues'
 
 axios.defaults.baseURL = API_URL
 
@@ -60,6 +61,7 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/queues' element={<Queues />} />
           <Route path='/admin/*' element={<AdminRoutes />} />
         </Routes>
         <ReactQueryDevtools />

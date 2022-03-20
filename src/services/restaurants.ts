@@ -16,6 +16,6 @@ export const getRestaurantByID = (id: string) =>
 export const createRestaurant = (data: IRestaurant) =>
   axios.post(RESTAURANTS, data)
 export const updateRestaurant = (id: string, data: Partial<IRestaurant>) =>
-  axios.patch(`${RESTAURANTS}/${id}`, data)
+  axios.patch<IRestaurant>(`${RESTAURANTS}/${id}`, data)
 export const deleteRestaurant = (id: string) =>
   axios.delete(`${RESTAURANTS}/${id}`)

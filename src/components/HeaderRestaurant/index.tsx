@@ -61,8 +61,8 @@ const HeaderRestaurant: React.FC<IProps> = (props) => {
         <h2>{restaurant?.data.name}</h2>
         <p className='text-break'>{restaurant?.data.description}</p>
         <div className='d-flex flex-wrap gap-3'>
-          {restaurant?.data.photos.map((photo) => (
-            <PhotoItem key={photo.alt}>
+          {restaurant?.data.photos.map((photo, index) => (
+            <PhotoItem key={`${photo.alt}-${index}`}>
               <Ratio aspectRatio='1x1'>
                 <img src={photo.src} alt={photo.alt} />
               </Ratio>
