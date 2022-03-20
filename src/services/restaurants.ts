@@ -12,3 +12,10 @@ export const getRestaurants = (q?: string) => {
 }
 export const getRestaurantByID = (id: string) =>
   axios.get<IRestaurant>(`${RESTAURANTS}/${id}`)
+
+export const createRestaurant = (data: IRestaurant) =>
+  axios.post(RESTAURANTS, data)
+export const updateRestaurant = (id: string, data: Partial<IRestaurant>) =>
+  axios.patch(`${RESTAURANTS}/${id}`, data)
+export const deleteRestaurant = (id: string) =>
+  axios.delete(`${RESTAURANTS}/${id}`)
