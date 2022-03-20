@@ -14,6 +14,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+Note: This is for development purpose only
+To start the emulator of Firebase, use `firebase emulators:start`.
+It will run on [http://localhost:4000](http://localhost:4000) to debug.
+If you has no firebase commmand, try to install by `yarn global add firebase-tools` and then login with `firebase login` and lastly, `firebase init` with database option.
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
