@@ -14,6 +14,7 @@ const CardWrapper = styled(Card)`
   img.cover {
     width: 100%;
     object-fit: cover;
+    background-color: var(--bs-light);
   }
   .content {
     padding: 0.5rem;

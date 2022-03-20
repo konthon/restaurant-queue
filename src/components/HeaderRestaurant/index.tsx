@@ -13,6 +13,7 @@ const HeaderWrapper = styled.div`
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
+    background-color: var(--bs-light);
   }
   section.content {
     padding-top: 1rem;
@@ -29,6 +30,7 @@ const PhotoItem = styled.div`
   img {
     width: 100%;
     object-fit: cover;
+    background-color: var(--bs-light);
   }
 `
 
