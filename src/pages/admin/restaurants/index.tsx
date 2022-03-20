@@ -65,7 +65,7 @@ const AdminRestaurants: React.FC = () => {
                 <td>{restaurant.name}</td>
                 <td>{restaurant.description}</td>
                 <td>{restaurant.queueIndex}</td>
-                <td>{restaurant.ownerUserIDs.map((id) => id)}</td>
+                <td>{restaurant.ownerUserIDs.join()}</td>
                 <td>
                   <ImageItem
                     src={restaurant.cover.src}

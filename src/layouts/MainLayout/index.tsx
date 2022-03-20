@@ -14,17 +14,19 @@ const MainLayout: React.FC = (props) => {
   return (
     <div>
       <header>
-        <Navbar bg='dark' variant='dark'>
+        <Navbar bg='light' variant='light'>
           <Container>
             <Link to='/' className='text-decoration-none'>
               <Navbar.Brand as='div'>Restaurant Queue</Navbar.Brand>
             </Link>
             <Nav className='me-auto'>
               <NavLink to='/'>Home</NavLink>
-              <NavLink to='/admin/queues'>Admin</NavLink>
               <NavLink to='/queues'>Queues</NavLink>
             </Nav>
             <Nav>
+              {user?.roles.includes('admin') && (
+                <NavLink to='/admin/queues'>Go to Admin Pages</NavLink>
+              )}
               <NavDropdown
                 title={
                   user?.username ? `Hello, ${user.username}` : 'Hello, Guest'
@@ -33,11 +35,17 @@ const MainLayout: React.FC = (props) => {
                 align='end'
               >
                 {user?.roles.includes('admin') && (
-                  <NavDropdown.Item>Go to Admin</NavDropdown.Item>
+                  <Link to='/admin/queues' className='text-decoration-none'>
+                    <NavDropdown.Item href='/admin/queues'>
+                      Go to Admin
+                    </NavDropdown.Item>
+                  </Link>
                 )}
                 {user?.roles.includes('owner') && (
                   <NavDropdown.Item>Go to My Restaurants</NavDropdown.Item>
                 )}
+                {(user?.roles.includes('admin') ||
+                  user?.roles.includes('owner')) && <NavDropdown.Divider />}
                 <NavDropdown.Item
                   onClick={() => {
                     logout()
@@ -45,7 +53,7 @@ const MainLayout: React.FC = (props) => {
                     navigate('/')
                   }}
                 >
-                  Logout
+                  Log out
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>

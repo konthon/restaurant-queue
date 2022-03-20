@@ -44,9 +44,9 @@ const AdminUsers: React.FC = () => {
                 </Button>
               </td>
               <td>{user.username}</td>
-              <td>{user.queueIDs}</td>
-              <td>{user.roles}</td>
-              <td>{user.ownedRestaurantIDs}</td>
+              <td>{user.queueIDs.join()}</td>
+              <td>{user.roles.join()}</td>
+              <td>{user.ownedRestaurantIDs.join()}</td>
             </tr>
           ))}
         </tbody>

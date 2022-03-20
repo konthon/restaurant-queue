@@ -40,7 +40,7 @@ const AdminLayout: React.FC = (props) => {
                     navigate('/')
                   }}
                 >
-                  Logout
+                  Log out
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>

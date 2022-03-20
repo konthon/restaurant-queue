@@ -11,6 +11,9 @@ import { API_URL } from 'services/_base'
 import AdminRoutes from 'routes/AdminRoutes'
 import AuthenModal from 'components/AuthenModal'
 import { UserContext, useUserReducer } from 'contexts/userContext'
+import { LS_USER } from 'config/constants'
+import { getUserByID } from 'services/users'
+import { IUserDispatch } from 'contexts/userContext/type'
 
 axios.defaults.baseURL = API_URL
 
@@ -26,6 +29,23 @@ function App() {
   const [isOpenAuthen, setIsOpenAuthen] = useState<boolean>(false)
 
   const userReducer = useUserReducer()
+
+  useEffect(() => {
+    const getUserData = async (id: string) => {
+      const response = await getUserByID(id)
+      if (response.data) {
+        userReducer.dispatch({
+          type: IUserDispatch.LOGIN,
+          payload: { user: response.data },
+        })
+        setIsOpenAuthen(false)
+      }
+    }
+    const userID = localStorage.getItem(LS_USER)
+    if (userID) {
+      getUserData(userID)
+    }
+  }, [])
 
   useEffect(() => {
     if (!userReducer.user?.username) {
