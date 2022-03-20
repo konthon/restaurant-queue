@@ -14,8 +14,12 @@ const QueueRestaurant: React.FC<IProps> = (props) => {
     setIsOpen(false)
   }
 
+  if (!selectedID) {
+    return null
+  }
   return (
     <>
+      <hr />
       <section className='slots'>
         <h3>Queue</h3>
         <div>In queue now: 99999</div>

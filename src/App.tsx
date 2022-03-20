@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Home from 'pages/home'
 import { API_URL } from 'services/_base'
+import AdminRoutes from 'routes/AdminRoutes'
 
 axios.defaults.baseURL = API_URL
 
@@ -24,6 +25,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/admin/*' element={<AdminRoutes />} />
       </Routes>
       <ReactQueryDevtools />
     </QueryClientProvider>

@@ -3,19 +3,22 @@
   "queues": [
     {
       "id": "random",
+      "queueNumber": 0,
       "user": "userId",
       "restaurant": "restaurantId",
       "createAt": "date",
       "updateAt": "date",
-      "status": "'in-queue' | 'done' | 'skip'"
+      "status": "'in-queue' | 'done' | 'skip' | 'canceled'"
     }
   ],
   "users": [
     {
       "id": "random",
+      "roles": ["admin", "user", "owner"],
       "username": "random",
       "password": "encrypted",
-      "queues": ["queueId1", "queueId2"]
+      "queues": ["queueId1", "queueId2"],
+      "ownedRestaurantIDs": []
     }
   ]
 }

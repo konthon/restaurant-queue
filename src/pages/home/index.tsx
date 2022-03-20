@@ -17,7 +17,6 @@ const Home: React.FC = () => {
         <Sidebar setSelectedID={setSelectedRestaurantID} />
         <div className='main-content flex-grow-1'>
           <HeaderRestaurant selectedID={selectedRestaurantID} />
-          <hr />
           <QueueRestaurant selectedID={selectedRestaurantID} />
         </div>
       </Container>

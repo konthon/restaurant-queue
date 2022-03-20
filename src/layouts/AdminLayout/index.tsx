@@ -1,10 +1,9 @@
+import NavLink from 'components/NavLink'
 import React from 'react'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
-import NavLink from 'components/NavLink'
-
-const MainLayout: React.FC = (props) => {
+const AdminLayout: React.FC = (props) => {
   const { children } = props
   return (
     <div>
@@ -16,12 +15,12 @@ const MainLayout: React.FC = (props) => {
             </Link>
             <Nav className='me-auto'>
               <NavLink to='/'>Home</NavLink>
-              <NavLink to='/admin/queues'>Admin</NavLink>
-              <NavLink to='/queues'>Queues</NavLink>
+              <NavLink to='/admin/queues'>Queues</NavLink>
+              <NavLink to='/admin/restaurants'>Restaurants</NavLink>
+              <NavLink to='/admin/users'>Users</NavLink>
             </Nav>
             <Nav>
-              <NavDropdown title='Hello, Guest' id='user dropdown' align='end'>
-                <NavDropdown.Item>Login</NavDropdown.Item>
+              <NavDropdown title='Hello, Admin' id='user dropdown' align='end'>
                 <NavDropdown.Item>Logout</NavDropdown.Item>
               </NavDropdown>
             </Nav>
@@ -33,4 +32,4 @@ const MainLayout: React.FC = (props) => {
   )
 }
 
-export default MainLayout
+export default AdminLayout

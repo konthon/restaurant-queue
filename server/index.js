@@ -18,6 +18,8 @@ module.exports = () => {
         src: faker.image.food(),
         alt: `${restaurantName}-${index + 1}`,
       })),
+      queueIndex: 0,
+      ownerUserIDs: [],
     })
   }
   return data

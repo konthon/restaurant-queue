@@ -9,4 +9,6 @@ export interface IRestaurant {
   description: string
   cover: IPhoto
   photos: IPhoto[]
+  queueIndex: number
+  ownerUserIDs: string[]
 }
