@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Modal, Ratio, Table } from 'react-bootstrap'
+import { Button, Ratio, Table } from 'react-bootstrap'
 import { useMutation, useQuery, useQueryClient } from 'react-query'
 
 import AdminLayout from 'layouts/AdminLayout'

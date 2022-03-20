@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Ratio } from 'react-bootstrap'
 import { useQuery } from 'react-query'
 import { getRestaurantByID } from 'services/restaurants'
