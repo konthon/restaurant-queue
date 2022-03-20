@@ -1,8 +1,4 @@
-export enum RoleType {
-  ADMIN = 'admin',
-  USER = 'user',
-  OWNER = 'owner',
-}
+export type RoleType = 'admin' | 'user' | 'owner'
 
 export interface IUser {
   id: string

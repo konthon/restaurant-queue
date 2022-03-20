@@ -1,7 +1,10 @@
-import React from 'react'
-import { Modal } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Modal, Tab, Tabs } from 'react-bootstrap'
 
 import type { Dispatch, SetStateAction } from 'react'
+
+import Login from './Login'
+import SignUp from './SignUp'
 
 interface IProps {
   show: boolean
@@ -10,6 +13,7 @@ interface IProps {
 
 const AuthenModal: React.FC<IProps> = (props) => {
   const { show, setShow } = props
+  const [page, setPage] = useState<string>('login')
   return (
     <Modal
       show={show}
@@ -17,8 +21,21 @@ const AuthenModal: React.FC<IProps> = (props) => {
       backdrop='static'
       keyboard={false}
     >
-      <Modal.Header />
-      <Modal.Body></Modal.Body>
+      <Modal.Body>
+        <Tabs
+          className='pt-2'
+          id='authen-tabs'
+          activeKey={page}
+          onSelect={(key) => setPage(key ?? 'login')}
+        >
+          <Tab eventKey='login' title='Log In' className='pt-3'>
+            <Login setShow={setShow} />
+          </Tab>
+          <Tab eventKey='signup' title='Sign Up' className='pt-3'>
+            <SignUp setShow={setShow} />
+          </Tab>
+        </Tabs>
+      </Modal.Body>
     </Modal>
   )
 }
