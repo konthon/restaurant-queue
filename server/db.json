@@ -22,11 +22,11 @@
         }
       ],
       "id": "316e63e5-d70f-47c3-af18-ff60449bb284",
-      "queueIndex": 4,
+      "queueIndex": 5,
       "ownerUserIDs": [
         "bc95ae4e-879d-4661-b239-fa33567a9b84"
       ],
-      "inQueue": 4
+      "inQueue": 5
     },
     {
       "name": "ChocolateVille (ชอคโกแลต วิลล์)",
@@ -549,6 +549,15 @@
       "restaurantID": "316e63e5-d70f-47c3-af18-ff60449bb284",
       "createAt": 1647826275948,
       "updateAt": 1647826275948,
+      "status": "in-queue"
+    },
+    {
+      "id": "8d7069c6-bd16-4ad7-b8d2-9d754239a491",
+      "queueNumber": 5,
+      "userID": "30666fd8-c2c8-453d-98fb-d90d30abbd96",
+      "restaurantID": "316e63e5-d70f-47c3-af18-ff60449bb284",
+      "createAt": 1647828813779,
+      "updateAt": 1647828813779,
       "status": "in-queue"
     }
   ],

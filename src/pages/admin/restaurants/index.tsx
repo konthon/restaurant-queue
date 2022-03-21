@@ -41,7 +41,7 @@ const AdminRestaurants: React.FC = () => {
               <th>Name</th>
               <th>Description</th>
               <th>Queue Index</th>
-              <th>Owners</th>
+              {/* <th>Owners</th> */}
               <th>Cover</th>
               <th>Photos</th>
             </tr>
@@ -51,9 +51,9 @@ const AdminRestaurants: React.FC = () => {
               <tr key={restaurant.id}>
                 <td>{index + 1}</td>
                 <td>
-                  <Button size='sm' variant='warning'>
+                  {/* <Button size='sm' variant='warning'>
                     Edit
-                  </Button>
+                  </Button> */}
                   <Button
                     size='sm'
                     variant='danger'
@@ -63,9 +63,9 @@ const AdminRestaurants: React.FC = () => {
                   </Button>
                 </td>
                 <td>{restaurant.name}</td>
-                <td>{restaurant.description}</td>
+                <td className='text-break'>{restaurant.description}</td>
                 <td>{restaurant.queueIndex}</td>
-                <td>{restaurant.ownerUserIDs.join()}</td>
+                {/* <td>{restaurant.ownerUserIDs.join()}</td> */}
                 <td>
                   <ImageItem
                     src={restaurant.cover.src}

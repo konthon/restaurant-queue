@@ -3,7 +3,7 @@ import { IQueue, StatusType } from 'interfaces/queue'
 
 import { QUEUES } from './_base'
 
-export const getQueues = () => axios.get(QUEUES)
+export const getQueues = () => axios.get<IQueue[]>(QUEUES)
 export const getQueuesOfRestaurant = (id: string, status?: StatusType) =>
   axios.get<IQueue[]>(QUEUES, { params: { restaurantID: id, status } })
 
