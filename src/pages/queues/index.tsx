@@ -35,6 +35,7 @@ const Queues: React.FC = () => {
     <MainLayout>
       <Container>
         <h2>My Queues</h2>
+        <hr />
         <section className='mb-5'>
           <h3>In Queue</h3>
           <div className='d-flex flex-wrap gap-3'>

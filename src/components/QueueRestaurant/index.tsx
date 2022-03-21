@@ -8,6 +8,7 @@ import { IQueue } from 'interfaces/queue'
 import { getRestaurantByID, updateRestaurant } from 'services/restaurants'
 import { useUser } from 'contexts/userContext'
 import { IRestaurant } from 'interfaces/restaurant'
+import { Link } from 'react-router-dom'
 
 interface IProps {
   selectedID: string | null
@@ -97,6 +98,9 @@ const QueueRestaurant: React.FC<IProps> = (props) => {
         <Modal.Header>Confirm your choice?</Modal.Header>
         <Modal.Body>
           Get the queue of <b>{restaurant?.data.name}</b>
+          <br />
+          After confirm, your queue will be in{' '}
+          <Link to='/queues'>Queue page</Link> in the navbar
         </Modal.Body>
         <Modal.Footer>
           <Button variant='light' onClick={onCancel}>

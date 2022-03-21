@@ -46,7 +46,6 @@ const CardQueue: React.FC<IProps> = (props) => {
     () => getInQueue(restaurant?.id || '', timeStamp, user?.id || ''),
     { enabled: !!restaurant?.id && !!user?.id }
   )
-  console.log(inQueue)
 
   return (
     <CardWrapper>

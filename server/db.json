@@ -22,9 +22,11 @@
         }
       ],
       "id": "316e63e5-d70f-47c3-af18-ff60449bb284",
-      "queueIndex": 1,
-      "ownerUserIDs": ["bc95ae4e-879d-4661-b239-fa33567a9b84"],
-      "inQueue": 1
+      "queueIndex": 4,
+      "ownerUserIDs": [
+        "bc95ae4e-879d-4661-b239-fa33567a9b84"
+      ],
+      "inQueue": 4
     },
     {
       "name": "ChocolateVille (ชอคโกแลต วิลล์)",
@@ -523,21 +525,30 @@
   ],
   "queues": [
     {
-      "id": "e10d2a6e-6345-407b-886b-dd9dd508a61d",
-      "queueNumber": 1,
-      "userID": "3995956c-5c1c-421e-96ae-d7743ccc8c75",
-      "restaurantID": "d47da081-c554-43b7-ab43-80ba2f42b98c",
-      "createAt": 1647820594940,
-      "updateAt": 1647820594940,
-      "status": "in-queue"
+      "id": "0556a8b0-ae59-421c-8987-fe47624bf337",
+      "queueNumber": 2,
+      "userID": "bc95ae4e-879d-4661-b239-fa33567a9b84",
+      "restaurantID": "316e63e5-d70f-47c3-af18-ff60449bb284",
+      "createAt": 1647825843941,
+      "updateAt": 1647825843941,
+      "status": "done"
     },
     {
-      "id": "c508d83b-5246-456a-9cfc-c5e5bc7578e5",
-      "queueNumber": 1,
-      "userID": "3995956c-5c1c-421e-96ae-d7743ccc8c75",
+      "id": "7106a9b8-0ba7-456a-84ad-24da2397252f",
+      "queueNumber": 3,
+      "userID": "bc95ae4e-879d-4661-b239-fa33567a9b84",
       "restaurantID": "316e63e5-d70f-47c3-af18-ff60449bb284",
-      "createAt": 1647820600458,
-      "updateAt": 1647820600458,
+      "createAt": 1647826259941,
+      "updateAt": 1647826259941,
+      "status": "skip"
+    },
+    {
+      "id": "0219689f-a56b-4ec9-998e-2a6cf52e5e03",
+      "queueNumber": 4,
+      "userID": "bc95ae4e-879d-4661-b239-fa33567a9b84",
+      "restaurantID": "316e63e5-d70f-47c3-af18-ff60449bb284",
+      "createAt": 1647826275948,
+      "updateAt": 1647826275948,
       "status": "in-queue"
     }
   ],
@@ -547,21 +558,31 @@
       "username": "admin",
       "password": "$2a$10$cwq4srTvQnTLi58YvqLm3ucp6rRf/GFZ1tlipmSq/E54pUeZNpmci",
       "ownedRestaurantIDs": [],
-      "roles": ["user", "admin"]
+      "roles": [
+        "user",
+        "admin"
+      ]
     },
     {
       "id": "3995956c-5c1c-421e-96ae-d7743ccc8c75",
       "username": "test",
       "password": "$2a$10$fmP60orsP4bejgO.VyWceeSgEbtpIiaDZieC.9JNjAzK0zYPxmZ.6",
       "ownedRestaurantIDs": [],
-      "roles": ["user"]
+      "roles": [
+        "user"
+      ]
     },
     {
       "id": "bc95ae4e-879d-4661-b239-fa33567a9b84",
       "username": "test_owner",
       "password": "$2a$10$MPoqWwcfx2PR9t.6dYG4eexztQDyys.Bsa0ZkHIpwBqgoG2Y2/ova",
-      "ownedRestaurantIDs": ["316e63e5-d70f-47c3-af18-ff60449bb284"],
-      "roles": ["user", "owner"]
+      "ownedRestaurantIDs": [
+        "316e63e5-d70f-47c3-af18-ff60449bb284"
+      ],
+      "roles": [
+        "user",
+        "owner"
+      ]
     }
   ]
 }

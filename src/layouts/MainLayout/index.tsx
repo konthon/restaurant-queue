@@ -13,7 +13,7 @@ const MainLayout: React.FC = (props) => {
   const navigate = useNavigate()
   return (
     <div>
-      <header>
+      <header className='mb-3'>
         <Navbar bg='light' variant='light'>
           <Container>
             <Link to='/' className='text-decoration-none'>
@@ -42,7 +42,11 @@ const MainLayout: React.FC = (props) => {
                   </Link>
                 )}
                 {user?.roles.includes('owner') && (
-                  <NavDropdown.Item>Go to My Restaurants</NavDropdown.Item>
+                  <Link to='/my-restaurants' className='text-decoration-none'>
+                    <NavDropdown.Item href='/my-restaurants'>
+                      Go to My Restaurants
+                    </NavDropdown.Item>
+                  </Link>
                 )}
                 {(user?.roles.includes('admin') ||
                   user?.roles.includes('owner')) && <NavDropdown.Divider />}

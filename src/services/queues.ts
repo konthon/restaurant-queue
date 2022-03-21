@@ -9,7 +9,8 @@ export const getQueuesOfRestaurant = (id: string, status?: StatusType) =>
 
 export const createQueueOfRestaurant = (data: IQueue) =>
   axios.post<IQueue>(QUEUES, data)
-
+export const updateQueue = (id: string, data: Partial<IQueue>) =>
+  axios.patch<IQueue>(`${QUEUES}/${id}`, data)
 export const deleteQueue = (id: string) => axios.delete(`${QUEUES}/${id}`)
 
 export const getQueueByUserID = (id: string) =>

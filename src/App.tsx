@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Route, Routes } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
@@ -6,15 +6,17 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import Home from 'pages/home'
-import { API_URL } from 'services/_base'
 import AdminRoutes from 'routes/AdminRoutes'
-import AuthenModal from 'components/AuthenModal'
-import { UserContext, useUserReducer } from 'contexts/userContext'
-import { LS_USER } from 'config/constants'
-import { getUserByID } from 'services/users'
-import { IUserDispatch } from 'contexts/userContext/type'
+import Home from 'pages/home'
 import Queues from 'pages/queues'
+import MyRestaurants from 'pages/myRestaurants'
+
+import AuthenModal from 'components/AuthenModal'
+import { API_URL } from 'services/_base'
+import { getUserByID } from 'services/users'
+import { UserContext, useUserReducer } from 'contexts/userContext'
+import { IUserDispatch } from 'contexts/userContext/type'
+import { LS_USER } from 'config/constants'
 
 axios.defaults.baseURL = API_URL
 
@@ -62,6 +64,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/queues' element={<Queues />} />
+          <Route path='/my-restaurants' element={<MyRestaurants />} />
           <Route path='/admin/*' element={<AdminRoutes />} />
         </Routes>
         <ReactQueryDevtools />
