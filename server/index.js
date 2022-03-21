@@ -19,6 +19,7 @@ module.exports = () => {
         alt: `${restaurantName}-${index + 1}`,
       })),
       queueIndex: 0,
+      inQueue: 0,
       ownerUserIDs: [],
     })
   }

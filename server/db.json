@@ -22,8 +22,9 @@
         }
       ],
       "id": "316e63e5-d70f-47c3-af18-ff60449bb284",
-      "queueIndex": 0,
-      "ownerUserIDs": []
+      "queueIndex": 1,
+      "ownerUserIDs": ["bc95ae4e-879d-4661-b239-fa33567a9b84"],
+      "inQueue": 1
     },
     {
       "name": "ChocolateVille (ชอคโกแลต วิลล์)",
@@ -47,8 +48,9 @@
         }
       ],
       "id": "d47da081-c554-43b7-ab43-80ba2f42b98c",
-      "queueIndex": 0,
-      "ownerUserIDs": []
+      "queueIndex": 1,
+      "ownerUserIDs": [],
+      "inQueue": 1
     },
     {
       "name": "Le Boeuf The Steak & Fries Bistro (เลอเบิฟ เดอะ สเต็ก แอนด์ ฟราย บิสโทร (สาขาหลังสวน))",
@@ -73,7 +75,8 @@
       ],
       "id": "f9818fcf-689a-489d-804b-8f3663702ae7",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "ครัวดอกไม้ขาว สาขาแรก",
@@ -98,7 +101,8 @@
       ],
       "id": "72636720-4bcb-42a0-a208-3a6d0e040748",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "Ginzado ทองหล่อ",
@@ -123,7 +127,8 @@
       ],
       "id": "d513a3dd-7d8c-4465-a031-a085c4b9ef90",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "SOUSAKU อารีย์",
@@ -148,7 +153,8 @@
       ],
       "id": "667ad352-363d-4289-bb6c-87a15d54be2a",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "แม่กลองหัวปลาหม้อไฟ",
@@ -173,7 +179,8 @@
       ],
       "id": "96b39c31-2725-4ad3-a135-7edab755a1b4",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "Tonkatsu Wako",
@@ -198,7 +205,8 @@
       ],
       "id": "f884b7a5-c6a7-425f-8000-66305eae0e08",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "Zanotti IL Ristorante Italiano",
@@ -223,7 +231,8 @@
       ],
       "id": "e49682ee-82e6-4a1f-b822-2e4c705affaf",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "เจ๊ไฝ ประตูผี (Jay Fai Pratu Phee)",
@@ -248,7 +257,8 @@
       ],
       "id": "abdbcf1b-9ea3-4567-91ad-d4a4f18a5281",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "ภัตตาคาร แกรนด์ เชียงการีล่า",
@@ -273,7 +283,8 @@
       ],
       "id": "f83afede-f99b-4c47-a0da-ce4f6d8e9ad6",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "ห้างหุ้นส่วนจำกัด 88มหาสาร (Mahasan)",
@@ -298,7 +309,8 @@
       ],
       "id": "09bde584-5a5e-4909-babc-d120cb240fc9",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "TORA Yakiniku x Cafe",
@@ -323,7 +335,8 @@
       ],
       "id": "2b27cf7f-e6aa-4b16-aea6-21c6387d60f9",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "Katsushin (かつ真) (คัทสึชิน)",
@@ -348,7 +361,8 @@
       ],
       "id": "253dbb12-8f60-496b-8f62-068bfeb968cc",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "ขาหมูเจริญแสง (Chareon Sang)",
@@ -373,7 +387,8 @@
       ],
       "id": "d283d8dd-ecea-42a5-91e2-c142dd901bc5",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "Fillets",
@@ -398,7 +413,8 @@
       ],
       "id": "a8dd440a-4d96-4323-8821-9d6a79035f58",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "เฮ้งชุนเส็ง (Heng Chun Seng)",
@@ -423,7 +439,8 @@
       ],
       "id": "14fb6c0d-aa88-4e7a-a97a-796aa4f75d1a",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "Chim by Siam Wisdom (สยาม วิสดอม)",
@@ -448,7 +465,8 @@
       ],
       "id": "062573fd-b60c-429b-8221-a4c29948c8b4",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "เกาเหลาเนื้อวัวไร้เทียมทานราชวัตร (Rai Tieam Tan Noodle)",
@@ -473,7 +491,8 @@
       ],
       "id": "ea9f55ba-bd3d-40b5-a22c-41ed1ba79c22",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     },
     {
       "name": "El Mercado (เอล เมอคาโด้)",
@@ -498,18 +517,28 @@
       ],
       "id": "082b0b21-6fe8-4cfc-b0bc-e6819f6f6441",
       "queueIndex": 0,
-      "ownerUserIDs": []
+      "ownerUserIDs": [],
+      "inQueue": 0
     }
   ],
   "queues": [
     {
-      "id": "random",
-      "queueNumber": 0,
-      "user": "userId",
-      "restaurant": "restaurantId",
-      "createAt": "date",
-      "updateAt": "date",
-      "status": "'in-queue' | 'done' | 'skip' | 'canceled'"
+      "id": "e10d2a6e-6345-407b-886b-dd9dd508a61d",
+      "queueNumber": 1,
+      "userID": "3995956c-5c1c-421e-96ae-d7743ccc8c75",
+      "restaurantID": "d47da081-c554-43b7-ab43-80ba2f42b98c",
+      "createAt": 1647820594940,
+      "updateAt": 1647820594940,
+      "status": "in-queue"
+    },
+    {
+      "id": "c508d83b-5246-456a-9cfc-c5e5bc7578e5",
+      "queueNumber": 1,
+      "userID": "3995956c-5c1c-421e-96ae-d7743ccc8c75",
+      "restaurantID": "316e63e5-d70f-47c3-af18-ff60449bb284",
+      "createAt": 1647820600458,
+      "updateAt": 1647820600458,
+      "status": "in-queue"
     }
   ],
   "users": [
@@ -518,21 +547,21 @@
       "username": "admin",
       "password": "$2a$10$cwq4srTvQnTLi58YvqLm3ucp6rRf/GFZ1tlipmSq/E54pUeZNpmci",
       "ownedRestaurantIDs": [],
-      "queueIDs": [],
-      "roles": [
-        "user",
-        "admin"
-      ]
+      "roles": ["user", "admin"]
     },
     {
       "id": "3995956c-5c1c-421e-96ae-d7743ccc8c75",
       "username": "test",
       "password": "$2a$10$fmP60orsP4bejgO.VyWceeSgEbtpIiaDZieC.9JNjAzK0zYPxmZ.6",
       "ownedRestaurantIDs": [],
-      "queueIDs": [],
-      "roles": [
-        "user"
-      ]
+      "roles": ["user"]
+    },
+    {
+      "id": "bc95ae4e-879d-4661-b239-fa33567a9b84",
+      "username": "test_owner",
+      "password": "$2a$10$MPoqWwcfx2PR9t.6dYG4eexztQDyys.Bsa0ZkHIpwBqgoG2Y2/ova",
+      "ownedRestaurantIDs": ["316e63e5-d70f-47c3-af18-ff60449bb284"],
+      "roles": ["user", "owner"]
     }
   ]
 }

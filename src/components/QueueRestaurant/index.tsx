@@ -43,10 +43,13 @@ const QueueRestaurant: React.FC<IProps> = (props) => {
   const createQueueMutation = useMutation(
     (data: IQueue) => createQueueOfRestaurant(data),
     {
-      onSuccess: () => {
+      onSuccess: async () => {
         updateRestaurantMutation.mutate({
           id: selectedID || '',
-          data: { queueIndex: (restaurant?.data.queueIndex || 0) + 1 },
+          data: {
+            queueIndex: (restaurant?.data.queueIndex || 0) + 1,
+            inQueue: (restaurant?.data.inQueue || 0) + 1,
+          },
         })
         queryClient.invalidateQueries(['queues', 'in-queue', selectedID])
       },
@@ -81,7 +84,9 @@ const QueueRestaurant: React.FC<IProps> = (props) => {
       <section className='slots'>
         <h3>Queue</h3>
         <div>In queue now: {queues?.data.length}</div>
-        <Button onClick={() => setIsOpenConfirmModal(true)}>Get queue!</Button>
+        <Button disabled={false} onClick={() => setIsOpenConfirmModal(true)}>
+          Get queue!
+        </Button>
       </section>
       <Modal
         show={isOpenConfirmModal}

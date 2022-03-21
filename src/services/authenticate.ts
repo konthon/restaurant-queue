@@ -29,7 +29,6 @@ export const loginAsGuest = async () => {
     username,
     password: '',
     ownedRestaurantIDs: [],
-    queueIDs: [],
     roles: ['user'],
   }
   const user = await createUser(guest)
@@ -48,7 +47,6 @@ export const signUp = async (username: string, password: string) => {
       username,
       password: bcrypt.hashSync(password),
       ownedRestaurantIDs: [],
-      queueIDs: [],
       roles: ['user'],
     }
     const user = await createUser(newUser)

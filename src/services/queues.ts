@@ -11,3 +11,20 @@ export const createQueueOfRestaurant = (data: IQueue) =>
   axios.post<IQueue>(QUEUES, data)
 
 export const deleteQueue = (id: string) => axios.delete(`${QUEUES}/${id}`)
+
+export const getQueueByUserID = (id: string) =>
+  axios.get<IQueue[]>(QUEUES, { params: { userID: id } })
+
+export const getInQueue = (
+  restaurantID: string,
+  maxTime: number,
+  userID: string
+) =>
+  axios.get<IQueue[]>(QUEUES, {
+    params: {
+      status: 'in-queue',
+      restaurantID,
+      userID,
+      updateAt_lte: maxTime,
+    },
+  })

@@ -11,4 +11,5 @@ export interface IRestaurant {
   photos: IPhoto[]
   queueIndex: number
   ownerUserIDs: string[]
+  inQueue: number
 }

@@ -9,5 +9,5 @@ export const getUserByUsername = (username: string) =>
 
 export const createUser = (data: IUser) => axios.post<IUser>(USERS, data)
 export const updateUser = (id: string, data: Partial<IUser>) =>
-  axios.patch(`${USERS}/${id}`, data)
+  axios.patch<IUser>(`${USERS}/${id}`, data)
 export const deleteUser = (id: string) => axios.delete(`${USERS}/${id}`)
