@@ -71,7 +71,6 @@ const QueueRestaurant: React.FC<IProps> = (props) => {
         updateAt: now,
         status: 'in-queue',
       }
-      // TODO: done task
       createQueueMutation.mutate(data)
     }
   }

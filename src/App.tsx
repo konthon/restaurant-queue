@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Route, Routes } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
-import { ReactQueryDevtools } from 'react-query/devtools'
+// import { ReactQueryDevtools } from 'react-query/devtools'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -67,7 +67,6 @@ function App() {
           <Route path='/my-restaurants' element={<MyRestaurants />} />
           <Route path='/admin/*' element={<AdminRoutes />} />
         </Routes>
-        <ReactQueryDevtools />
         <AuthenModal show={isOpenAuthen} setShow={setIsOpenAuthen} />
       </QueryClientProvider>
     </UserContext.Provider>

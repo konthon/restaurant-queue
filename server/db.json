@@ -22,11 +22,11 @@
         }
       ],
       "id": "316e63e5-d70f-47c3-af18-ff60449bb284",
-      "queueIndex": 5,
+      "queueIndex": 0,
       "ownerUserIDs": [
         "bc95ae4e-879d-4661-b239-fa33567a9b84"
       ],
-      "inQueue": 5
+      "inQueue": 0
     },
     {
       "name": "ChocolateVille (ชอคโกแลต วิลล์)",
@@ -50,9 +50,9 @@
         }
       ],
       "id": "d47da081-c554-43b7-ab43-80ba2f42b98c",
-      "queueIndex": 1,
+      "queueIndex": 0,
       "ownerUserIDs": [],
-      "inQueue": 1
+      "inQueue": 0
     },
     {
       "name": "Le Boeuf The Steak & Fries Bistro (เลอเบิฟ เดอะ สเต็ก แอนด์ ฟราย บิสโทร (สาขาหลังสวน))",
@@ -523,44 +523,7 @@
       "inQueue": 0
     }
   ],
-  "queues": [
-    {
-      "id": "0556a8b0-ae59-421c-8987-fe47624bf337",
-      "queueNumber": 2,
-      "userID": "bc95ae4e-879d-4661-b239-fa33567a9b84",
-      "restaurantID": "316e63e5-d70f-47c3-af18-ff60449bb284",
-      "createAt": 1647825843941,
-      "updateAt": 1647825843941,
-      "status": "done"
-    },
-    {
-      "id": "7106a9b8-0ba7-456a-84ad-24da2397252f",
-      "queueNumber": 3,
-      "userID": "bc95ae4e-879d-4661-b239-fa33567a9b84",
-      "restaurantID": "316e63e5-d70f-47c3-af18-ff60449bb284",
-      "createAt": 1647826259941,
-      "updateAt": 1647826259941,
-      "status": "skip"
-    },
-    {
-      "id": "0219689f-a56b-4ec9-998e-2a6cf52e5e03",
-      "queueNumber": 4,
-      "userID": "bc95ae4e-879d-4661-b239-fa33567a9b84",
-      "restaurantID": "316e63e5-d70f-47c3-af18-ff60449bb284",
-      "createAt": 1647826275948,
-      "updateAt": 1647826275948,
-      "status": "in-queue"
-    },
-    {
-      "id": "8d7069c6-bd16-4ad7-b8d2-9d754239a491",
-      "queueNumber": 5,
-      "userID": "30666fd8-c2c8-453d-98fb-d90d30abbd96",
-      "restaurantID": "316e63e5-d70f-47c3-af18-ff60449bb284",
-      "createAt": 1647828813779,
-      "updateAt": 1647828813779,
-      "status": "in-queue"
-    }
-  ],
+  "queues": [],
   "users": [
     {
       "id": "30666fd8-c2c8-453d-98fb-d90d30abbd96",
